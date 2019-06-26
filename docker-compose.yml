@@ -1,8 +1,8 @@
 version: '3'
 services:
-  hungryfyapp:
-    container_name: hungryfyapp
-    build: ./Hungryfy
+  hungrifyapp:
+    container_name: hungrifyapp
+    build: ./Hungrify
     restart: always
     command: "npm start"
     ports:

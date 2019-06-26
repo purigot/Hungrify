@@ -1,0 +1,14 @@
+version: '3'
+services:
+  hungryfyapp:
+    container_name: hungryfyapp
+    build: ./Hungryfy
+    restart: always
+    command: "npm start"
+    ports:
+      - "9000:8080"
+    networks:
+      - app-got
+networks:
+    app-got:
+      driver: bridge
